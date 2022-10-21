@@ -33,7 +33,7 @@ resource "digitalocean_kubernetes_cluster" "k8s" {
   node_pool {
     name       = "worker-pool"
     size       = "s-2vcpu-2gb"
-    node_count = 3
+    node_count = 2
 
     taint {
       key    = "workloadKind"
